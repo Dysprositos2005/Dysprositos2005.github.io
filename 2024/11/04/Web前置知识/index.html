@@ -13,21 +13,26 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="https://dysprositos2005.github.io/"/>
+    <link rel="canonical" href="https://dysprositos2005.github.io/2024/11/04/web前置知识/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta name="description" content="一些Markdown">
-<meta property="og:type" content="website">
+        <meta name="description" content="Web前置知识HTTP协议请求方式123456789101112131415161、OPTIONS返回服务器针对特定资源所支持的HTTP请求方法，也可以利用向web服务器发送‘*’的请求来测试服务器的功能性2、HEAD向服务器索与GET请求相一致的响应，只不过响应体将不会被返回。这一方法可以再不必传输整个响应内容的情况下，就可以获取包含在响应小消息头中的元信息。3、GET向特定的资源发出请求。注意">
+<meta property="og:type" content="article">
 <meta property="og:title" content="dysprositos的博客">
-<meta property="og:url" content="https://dysprositos2005.github.io/index.html">
+<meta property="og:url" content="https://dysprositos2005.github.io/2024/11/04/Web%E5%89%8D%E7%BD%AE%E7%9F%A5%E8%AF%86/index.html">
 <meta property="og:site_name" content="dysprositos的博客">
-<meta property="og:description" content="一些Markdown">
+<meta property="og:description" content="Web前置知识HTTP协议请求方式123456789101112131415161、OPTIONS返回服务器针对特定资源所支持的HTTP请求方法，也可以利用向web服务器发送‘*’的请求来测试服务器的功能性2、HEAD向服务器索与GET请求相一致的响应，只不过响应体将不会被返回。这一方法可以再不必传输整个响应内容的情况下，就可以获取包含在响应小消息头中的元信息。3、GET向特定的资源发出请求。注意">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="c:\Users\18394\AppData\Roaming\Typora\typora-user-images\image-20241031155814351.png">
+<meta property="og:image" content="c:\Users\18394\AppData\Roaming\Typora\typora-user-images\image-20241031161104562.png">
+<meta property="article:published_time" content="2024-11-04T15:32:51.696Z">
+<meta property="article:modified_time" content="2024-11-05T11:30:56.076Z">
 <meta property="article:author" content="dysprositos">
 <meta property="article:tag" content="web,爬虫,学习笔记">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:\Users\18394\AppData\Roaming\Typora\typora-user-images\image-20241031155814351.png">
     
     
     <!--- Icon Part-->
@@ -120,99 +125,13 @@
 <main class="page-container" id="swup">
 
     
-        
-    <style>
-        .home-banner-container {
-            background: none !important;
-        }
-        .home-article-item,
-        .sidebar-links,
-        .sidebar-content,
-        a.page-number,
-        a.extend,
-        .sidebar-links .links:hover,
-        .right-bottom-tools,
-        footer.footer {
-            background-color: var(--background-color-transparent-80) !important;
-        }
-        .right-bottom-tools:hover,
-        a.page-number:hover,
-        a.extend:hover {
-            background-color: var(--primary-color) !important;
-        }
-        .site-info,
-        .home-article-sticky-label {
-            background-color: var(--background-color-transparent-15) !important;
-        }
-        .home-article-sticky-label {
-            backdrop-filter: none !important;
-        }
-    </style>
-    <div class="home-banner-background transition-fade fixed top-0 left-0 w-screen h-screen scale-125 sm:scale-110 box-border will-change-transform bg-cover">
-        <img src="/image/img_3.png" alt="home-banner-background" class="w-full h-full object-cover dark:hidden">
-        <img src="/images/wallhaven-wqery6-dark.webp" alt="home-banner-background" class="w-full h-full object-cover hidden dark:block">
-    </div>
-
-
-<div class="home-banner-container flex justify-center items-center transition-fade relative">
-    
-    <div class="content mt-8 flex flex-col justify-center items-center">
-        <div class="description flex flex-col justify-center items-center w-screen font-medium text-center"
-        
-        >
-            欢迎来到Dysprositos的博客
-            
-            
-                <p><i id="subtitle"></i></p>
-            
-        </div>
-        
-            
-            <div class="absolute bottom-0.5 flex flex-row justify-between max-w-[1340px] items-center w-full px-8 sm:px-12">
-                <div class="flex p-3 bg-gray-300/50 dark:bg-gray-500/40 backdrop-blur-lg border border-white/20 dark:border-gray-500/30 group rounded-full cursor-pointer flex justify-center items-center aspect-square h-full shadow-redefine-flat hover:shadow-redefine-flat-hover transition-shadow" onclick="scrollToMain()" >
-                    <i class="fa-solid fa-arrow-down fa-fw fa-lg group-hover:translate-y-1 transition-transform"></i>
-                </div>
-                <div class="social-contacts px-6 py-3 bg-gray-300/50 dark:bg-gray-500/40 backdrop-blur-lg border border-white/20 dark:border-gray-500/30 shadow-redefine-flat rounded-full flex flex-row gap-3 items-center">
-                    
-                        
-                            
-                                <span class="social-contact-item github">
-                                    <a target="_blank" href="https://github.com/Dysprositos2005">
-                                        <i class="fa-brands fa-fw fa-lg fa-github"></i>
-                                    </a>
-                                </span>
-                            
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                        
-                    
-                    
-                </div>
-            </div>
-        
-    </div>
-    <script>
-        const scrollToMain = ()=> {
-            console.log('scroll');
-            const target = document.querySelector('.main-content-container');
-            target.scrollIntoView({ behavior: 'smooth'});
-        }
-    </script>
-</div>
-    
 
     <div class="main-content-container flex flex-col justify-between min-h-dvh">
 
 
         <div class="main-content-header">
             <header class="navbar-container px-6 md:px-12">
-    <div class="navbar-content transition-navbar has-home-banner">
+    <div class="navbar-content transition-navbar ">
         <div class="left">
             
                 <a class="logo-image h-8 w-8 sm:w-10 sm:h-10 mr-3" href="/">
@@ -220,9 +139,9 @@
                 </a>
             
             <a class="logo-title" href="/">
-                <h1>
+                
                 Dysprositos的blog
-                </h1>
+                
             </a>
         </div>
 
@@ -236,7 +155,7 @@
 
                             <li class="navbar-item">
                                 <!-- Menu -->
-                                <a class="active"
+                                <a class=""
                                    href="/"
                                         >
                                     <i class="fa-regular fa-house fa-fw"></i>
@@ -270,7 +189,7 @@
 
                     <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
                         
-                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full active"
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
                            href="/"
                         >
                             <span>
@@ -316,180 +235,232 @@
         <div class="main-content-body">
 
             
-                <div class="home-sidebar-container">
-    <div class="sticky-container sticky">
-        
-        
-            
-            <div class="sidebar-content" >
-                <div class="avatar flex justify-center">
-    <img src="/image/img.png">
-</div>
-                <div class="author flex flex-col justify-center my-2.5 mx-0">
-    <div class="name">dysprositos</div>
-    
-        <div class="label">Lv1</div>
-    
-</div>
-                <div class="statistics flex justify-around my-2.5">
-    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">0</div>
-        <div class="label text-third-text-color text-sm">Tags</div>
-    </a>
-    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">0</div>
-        <div class="label text-third-text-color text-sm">Categories</div>
-    </a>
-    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">3</div>
-        <div class="label text-third-text-color text-sm">Posts</div>
-    </a>
-</div>
-            </div>
-        
-
-    </div>
-</div>
-
-            
 
             <div class="main-content">
 
                 
-                    <div class="home-content-container">
-    <ul class="home-article-list">
+                    <div class="post-page-container flex relative justify-between box-border w-full h-full">
+    <div class="article-content-container">
+
+        <div class="article-title relative w-full">
+            
+                <div class="w-full flex items-center pt-6 justify-start">
+                    <h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3"></h1>
+                </div>
+            
+            </div>
+
         
-            <li class="home-article-item">
-
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/2024/11/04/Web%E5%89%8D%E7%BD%AE%E7%9F%A5%E8%AF%86/">
-                            
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
+            <div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
+                <div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
+                    <img src="/image/img.png">
+                </div>
+                <div class="info flex flex-col justify-between">
+                    <div class="author flex items-center">
+                        <span class="name text-default-text-color text-lg font-semibold">dysprositos</span>
                         
-                            
-                            Web前置知识HTTP协议请求方式123456789101112131415161、OPTIONS返回服务器针对特定资源所支持的HTTP请求方法，也可以利用向web服务器发送‘*’的请求来测试服务器的功能性2、HEAD向服务器索与GET请求相一致的响应，只不过响应体将不会被返回。这一方法可以再不必传输整个响应内容的情况下，就可以获取包含在响应小消息头中的元信息。3、GET向特定的资源发出请求...
+                            <span class="author-label ml-1.5 text-xs px-2 py-0.5 rounded-small text-third-text-color border border-shadow-color-1">Lv1</span>
                         
                     </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Mon Nov 04 2024 23:32:51 GMT+0800">
-                
-                    2024-11-04
-                
-            </span>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2024-11-04 23:32:51</span>
+        <span class="mobile">2024-11-04 23:32:51</span>
+        <span class="hover-info">Created</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2024-11-05 19:30:56</span>
+            <span class="mobile">2024-11-05 19:30:56</span>
+            <span class="hover-info">Updated</span>
         </span>
-        
-        
-    </div>
+    
 
-    <a href="/2024/11/04/Web%E5%89%8D%E7%BD%AE%E7%9F%A5%E8%AF%86/">Read more<span class="seo-reader-text"></span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+    
+    
+
+    
+    
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
 </div>
 
-                </div>
-            </li>
-        
-            <li class="home-article-item">
-
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/2024/11/03/%E7%AC%AC%E4%B8%80%E7%AF%87blog/">
-                            第一篇blog
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            
-                            
-                        
                     </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Sun Nov 03 2024 19:01:31 GMT+0800">
-                
-                    2024-11-03
-                
-            </span>
-        </span>
-        
-        
-    </div>
-
-    <a href="/2024/11/03/%E7%AC%AC%E4%B8%80%E7%AF%87blog/">Read more<span class="seo-reader-text">第一篇blog</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
                 </div>
+            </div>
+        
+
+        
+
+
+        <div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
+            <h1 id="Web前置知识"><a href="#Web前置知识" class="headerlink" title="Web前置知识"></a>Web前置知识</h1><h2 id="HTTP协议"><a href="#HTTP协议" class="headerlink" title="HTTP协议"></a>HTTP协议</h2><h3 id="请求方式"><a href="#请求方式" class="headerlink" title="请求方式"></a>请求方式</h3><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">1、OPTIONS</span><br><span class="line">返回服务器针对特定资源所支持的HTTP请求方法，也可以利用向web服务器发送‘*’的请求来测试服务器的功能性</span><br><span class="line">2、HEAD</span><br><span class="line">向服务器索与GET请求相一致的响应，只不过响应体将不会被返回。这一方法可以再不必传输整个响应内容的情况下，就可以获取包含在响应小消息头中的元信息。</span><br><span class="line">3、GET</span><br><span class="line">向特定的资源发出请求。注意：GET方法不应当被用于产生“副作用”的操作中，例如在Web Application中，其中一个原因是GET可能会被网络蜘蛛等随意访问。Loadrunner中对应get请求函数：web_link和web_url</span><br><span class="line">4、POST</span><br><span class="line">向指定资源提交数据进行处理请求（例如提交表单或者上传文件）。数据被包含在请求体中。POST请求可能会导致新的资源的建立和/或已有资源的修改。 Loadrunner中对应POST请求函数：web_submit_data,web_submit_form</span><br><span class="line">5、PUT</span><br><span class="line">向指定资源位置上传其最新内容</span><br><span class="line">6、DELETE</span><br><span class="line">请求服务器删除Request-URL所标识的资源</span><br><span class="line">7、TRACE</span><br><span class="line">回显服务器收到的请求，主要用于测试或诊断</span><br><span class="line">8、CONNECT</span><br><span class="line">HTTP/1.1协议中预留给能够将连接改为管道方式的代理服务器。</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="crul命令"><a href="#crul命令" class="headerlink" title="crul命令"></a>crul命令</h3><p><a class="link"   target="_blank" rel="noopener" href="https://blog.csdn.net/u013514928/article/details/102810250" >curl命令用法-CSDN博客 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>crul命令：curl [options…] <url></p>
+<p>show Info</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="C:\Users\18394\AppData\Roaming\Typora\typora-user-images\image-20241031155814351.png"
+                      alt="image-20241031155814351" style="zoom: 67%;" 
+                >
+
+<p>Request Content</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="C:\Users\18394\AppData\Roaming\Typora\typora-user-images\image-20241031161104562.png"
+                      alt="image-20241031161104562" style="zoom:67%;" 
+                >
+
+<h3 id="HTTP重定向"><a href="#HTTP重定向" class="headerlink" title="HTTP重定向"></a>HTTP重定向</h3><p>服务器无法处理浏览器发送过来的请求（request），服务器告诉浏览器跳转到可以处理请求的url上。（浏览器会自动访问该URL地址，以至于用户无法分辨是否重定向了。） </p>
+<h4 id="状态码："><a href="#状态码：" class="headerlink" title="状态码："></a>状态码：</h4><p>301：在请求的URL已被移除时使用。响应的Location首部中应该包含资源现在所处的URL。<br>302：与301状态码类似，但是，客户端应该使用Location首部给出的URL来临时定位资源，将来的请求仍然使用老的URL。</p>
+<p>302跳转又称暂时性转移，当网页临时移到新的位置，而浏览器的缓存没有更新时，就出现了302跳转。</p>
+<h4 id="重定向和请求转发："><a href="#重定向和请求转发：" class="headerlink" title="重定向和请求转发："></a>重定向和请求转发：</h4><p>转发是服务器行为，重定向是客户端行为。</p>
+<p>转发过程：客户浏览器发送http请求——》web服务器接受此请求——》调用内部的一个方法在容器内部完成请求处理和转发动作——》将目标资源发送给客户</p>
+<p>重定向过程：客户浏览器发送http请求——》web服务器接受后发送302状态码响应及对应新的location给客户浏览器——》客户浏览器发现是302响应，则自动再发送一个新的http请求，请求url是新的location地址——》服务器根据此请求寻找资源并发送给客户</p>
+<p>重定向是两次request</p>
+<h3 id="HTTP基础认证"><a href="#HTTP基础认证" class="headerlink" title="HTTP基础认证"></a>HTTP基础认证</h3><p>Basic认证是一种较为简单的HTTP认证方式，客户端通过明文（Base64编码格式）传输用户名和密码到服务端进行认证，通常需要配合HTTPS来保证信息传输的安全。</p>
+<p>客户端发送http request 给服务器,服务器验证该用户是否已经登录验证过了，如果没有的话，<br>服务器会返回一个401 Unauthozied给客户端，并且在Response 的 header “WWW-Authenticate” 中添加信息。</p>
+<p>浏览器在接受到401 Unauthozied后，会弹出登录验证的对话框。用户输入用户名和密码后，<br>浏览器用BASE64编码后，放在Authorization header中发送给服务器。</p>
+<p>服务器将Authorization header中的用户名密码取出，进行验证， 如果验证通过，将根据请求，发送资源给客户端。</p>
+<h4 id="爆破方法"><a href="#爆破方法" class="headerlink" title="爆破方法"></a>爆破方法</h4><p>Basic后base64部分作为目标，负载类型简单列表，加载密码字典</p>
+<p>添加前缀admin:</p>
+<p>编码方式base64</p>
+<p>取消URL-encode</p>
+
+        </div>
+
+        
+            <div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
+                <div class="article-copyright-info-container">
+    <ul>
+        <li><strong>Title:</strong> </li>
+        <li><strong>Author:</strong> dysprositos</li>
+        <li><strong>Created at
+                :</strong> 2024-11-04 23:32:51</li>
+        
+            <li>
+                <strong>Updated at
+                    :</strong> 2024-11-05 19:30:56
             </li>
         
-            <li class="home-article-item">
+        <li>
+            <strong>Link:</strong> https://dysprositos2005.github.io/2024/11/04/Web前置知识/
+        </li>
+        <li>
+            <strong>
+                License:
+            </strong>
+            
 
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/2024/11/03/hello-world/">
-                            Hello World
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            
-                            Welcome to Hexo ! This is your very first post. Check documentation  for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting  or you can ask me on GitHub ...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Sun Nov 03 2024 18:10:39 GMT+0800">
-                
-                    2024-11-03
-                
-            </span>
-        </span>
-        
-        
-    </div>
-
-    <a href="/2024/11/03/hello-world/">Read more<span class="seo-reader-text">Hello World</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
+            
+                This work is licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a>.
+            
+        </li>
     </ul>
-
-    <div class="home-paginator px-7 py-5">
-        <div class="paginator">
-    <span class="page-number current">1</span>
 </div>
+
+            </div>
+        
+
+        
+
+        
+
+        
+            <div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
+                
+                
+                    <div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+                        <a class="next"
+                        rel="next"
+                        href="/2024/11/03/%E7%AC%AC%E4%B8%80%E7%AF%87blog/"
+                        >
+                            <span class="title flex justify-center items-center">
+                                <span class="post-nav-title-item">第一篇blog</span>
+                                <span class="post-nav-item">Next posts</span>
+                            </span>
+                            <span class="right arrow-icon flex justify-center items-center">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+
+        
+            <div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
+                <div class="comments-container mt-10 w-full ">
+    <div id="comment-anchor" class="w-full h-2.5"></div>
+    <div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
+        Comments
+    </div>
+    
+
+        
+            
+    <div id="waline"></div>
+    <script type="module" data-swup-reload-script>
+      import { init } from '/js/libs/waline.mjs';
+
+      function loadWaline() {
+        init({
+          el: '#waline',
+          serverURL: 'https://example.example.com',
+          lang: 'zh-CN',
+          dark: 'body[class~="dark-mode"]',
+          reaction: false,
+          requiredMeta: ['nick', 'mail'],
+          emoji: [],
+          
+          
+        });
+      }
+
+      if (typeof swup !== 'undefined') {
+        loadWaline();
+      } else {
+        window.addEventListener('DOMContentLoaded', loadWaline);
+      }
+    </script>
+
+
+
+        
+    
+</div>
+
+            </div>
+        
+    </div>
+
+    
+        <div class="toc-content-container">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <div class="toc-title">On this page</div>
+        <div class="page-title"></div>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Web%E5%89%8D%E7%BD%AE%E7%9F%A5%E8%AF%86"><span class="nav-text">Web前置知识</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#HTTP%E5%8D%8F%E8%AE%AE"><span class="nav-text">HTTP协议</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%B7%E6%B1%82%E6%96%B9%E5%BC%8F"><span class="nav-text">请求方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#crul%E5%91%BD%E4%BB%A4"><span class="nav-text">crul命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTTP%E9%87%8D%E5%AE%9A%E5%90%91"><span class="nav-text">HTTP重定向</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTTP%E5%9F%BA%E7%A1%80%E8%AE%A4%E8%AF%81"><span class="nav-text">HTTP基础认证</span></a></li></ol></li></ol></li></ol>
 
     </div>
 </div>
+        </div>
+    
+</div>
 
-                    <div class="comment-container pjax"></div>
+
+
                 
 
             </div>
@@ -572,6 +543,27 @@
         </div>
     </div>
 
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="article-tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="right-bottom-tools page-aside-toggle">
+                <i class="fa-regular fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+            <li class="go-comment">
+                <i class="fa-regular fa-comments"></i>
+            </li>
+        
+    </ul>
+</div>
+
+        </div>
     
 
     <div class="right-side-tools-container">
@@ -656,7 +648,6 @@
         containers: ["#swup"],
     });
 </script>
-
 
 
 
